@@ -7,4 +7,4 @@ const requestListener = function (req, res) {
 
 const server = http.createServer(requestListener);
 var port = process.env.PORT || 5000;
-server.listen(8080);
+server.listen(port);
