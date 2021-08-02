@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
-
+    <link href="../css/styles.css" rel="stylesheet">
     <title>Fitness   </title>
 </head>
 <body>
@@ -41,7 +41,20 @@
             </div>
         </div>
         <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
-            <img class="object-cover object-center rounded" alt="hero" src="https://source.unsplash.com/720x600/?fitness,gym">
+
+            <img class="object-cover object-center rounded" src="" id="image">
+
+              <script type="text/javascript">
+             let image = document.getElementById("image");
+              let images = ['./img/image1.jpg', './img/image2.jpg', './img/image3.jpg', './img/image4.jpg']
+
+            setInterval (function(){
+
+                let random = Math.floor(Math.random() * 4);
+                image.src = images[random];
+            }, 800);
+              </script>
+
         </div>
     </div>
 </section>
